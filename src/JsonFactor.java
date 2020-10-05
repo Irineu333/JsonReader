@@ -105,6 +105,9 @@ public class JsonFactor
             Boolean bool = (Boolean) factor;
             estrutura.add(tab + "boolean: " + key + bool);
         }
+        else if(factor.toString() == "null" ) {
+            estrutura.add(tab + key + "null");
+        }
         else
         {
             System.out.print("\nErro: " + factor);
